@@ -21,6 +21,7 @@
 <!--  Використовуйте цей селектор :visited--> */
 
 .lesson-four-task-three a[class='link']:visited {
+  background-color: yellow;
   color: yellow;
 }
 
@@ -34,7 +35,7 @@
 
 <!--      Використовуйте цей селектор :link --> */
 
-.lesson-four-task-four #sidebar > a:link {
+.lesson-four-task-four a:link {
   background-color:red;
  color: red;
 }
@@ -147,14 +148,14 @@ input:invalid {
 <!--      Використовуйте цей селектор :out-of-range --> */
 
 .lesson-four-task-sixteen #quantity:out-of-range {
-  background-color:red;
+  background:red;
 }
 /* <!--    Є форма з полем вводу числа, яке може бути від 0 до 100.
 Задача змінити колір фону на червоний, якщо значення входять до діапазону від 0 до 100. -->
 
 <!--      Використовуйте цей селектор :in-range--> */
-.lesson-four-task-seventeen #quantity:in-range {
-  background-color: red;
+.lesson-four-task-seventeen input:in-range {
+  color: red;
 }
 
 /* <!--    Завдання №18.У цьому завданні потрібно зробити, щоб змінювався колір фону placeholder на червоний ,
@@ -170,7 +171,7 @@ input:invalid {
 
 який змінює колір тексту на білий та фоновий колір на жовтий при активному стані. --> */
 
-.lesson-four-task-nineteen .btn-group:active {
+.lesson-four-task-nineteen button:active {
   background:yellow;
 }
 button:active {
