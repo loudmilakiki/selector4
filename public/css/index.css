@@ -10,7 +10,7 @@
  /* <!-- Завдання №2. Змініть фон заголовка на зелений, коли користувач наведе курсор миші на посилання: -->
  <!--  Використовуйте цей селектор :hover--> */
 
-.lesson-four-task-two a:hover+h1{
+.lesson-four-task-two a:hover + h1{
   background:green;
 }
 
@@ -20,12 +20,10 @@
         тому легше всього пройти тут -->
 <!--  Використовуйте цей селектор :visited--> */
 
-.lesson-four-task-three .link:visited {
+.lesson-four-task-three a[class='link']:visited {
   color: yellow;
 }
-.link:link {
-  background:yellow;
-}
+
 
 /* <!--    Завдання №4. Змініть колір тексту та фон посилання,
 яке знаходиться в блоку з ідентифікатором "sidebar", на червоний: -->
@@ -36,9 +34,9 @@
 
 <!--      Використовуйте цей селектор :link --> */
 
-.lesson-four-task-four a:link {
+.lesson-four-task-four #sidebar > a:link {
   background-color:red;
-  color: red;
+ color: red;
 }
 
 /* <!--    Завдання №5. Змініть колір тексту та фон кнопки, коли користувач натискає на неї, на червоний: -->
@@ -64,7 +62,8 @@
 <!--      Використовуйте цей селектор :target --> */
 
 .lesson-four-task-seven #target:target{
-  color:rgb(23, 225, 23);
+  background:green;
+  color: green;
 }
 
 /* <!--    Завдання №8. Змініть колір тексту на білий та фон елемента на синій при натискані відповідного чекбоксу: -->
@@ -130,7 +129,7 @@ input {
   background-color:green;
 }
 input:invalid {
-  background-color: rgb(186, 14, 14);
+  background-color: red;
 }
 
 /* <!--    Завдання №15. Застосувати селектор :optional до текстового поля форми,
@@ -147,14 +146,14 @@ input:invalid {
 
 <!--      Використовуйте цей селектор :out-of-range --> */
 
-.lesson-four-task-sixteen input:out-of-range {
+.lesson-four-task-sixteen #quantity:out-of-range {
   background-color:red;
 }
 /* <!--    Є форма з полем вводу числа, яке може бути від 0 до 100.
 Задача змінити колір фону на червоний, якщо значення входять до діапазону від 0 до 100. -->
 
 <!--      Використовуйте цей селектор :in-range--> */
-.lesson-four-task-seventeen input:in-range {
+.lesson-four-task-seventeen #quantity:in-range {
   background-color: red;
 }
 
@@ -171,8 +170,10 @@ input:invalid {
 
 який змінює колір тексту на білий та фоновий колір на жовтий при активному стані. --> */
 
-.lesson-four-task-nineteen button:active {
-  background-color:yellow;
+.lesson-four-task-nineteen .btn-group:active {
+  background:yellow;
+}
+button:active {
   color: white;
 }
 
@@ -190,8 +191,8 @@ input:invalid {
 
 Використовуйте цей селектор :default */
 
-.lesson-four-task-twenty-one input:default+label{
-  background:red;
+.lesson-four-task-twenty-one > input[type='radio']:default+label {
+  color:red;
 }
 
 
