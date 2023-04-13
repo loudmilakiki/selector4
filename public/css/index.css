@@ -171,12 +171,12 @@ input:invalid {
 
 який змінює колір тексту на білий та фоновий колір на жовтий при активному стані. --> */
 
-.lesson-four-task-nineteen button:active {
-  background:yellow;
+.lesson-four-task-nineteen .btn-group:focus-within {
+  background-color: #ff0;
+  color: #fff;
 }
-button:active {
-  color: white;
-}
+
+
 
 /* <!--    Завдання №20. При валідації форми з помилкою, змінюйте колір фону на червоний. -->
 
